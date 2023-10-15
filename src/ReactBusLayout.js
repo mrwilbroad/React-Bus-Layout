@@ -3,7 +3,7 @@ import Layout from "./components/Layout/Layout";
 import BusLayoutContext from "./components/Context/BusLayoutContext";
 import { useEffect, useState } from "react";
 
-const App = ({
+const ReactBusLayout = ({
   nRows = 5,
   Right = {
     col: 2,
@@ -23,9 +23,7 @@ const App = ({
     max: 2,
   },
 }) => {
-  useEffect(() => {
-    console.log("App Rendered .....********************##############");
-  });
+  useEffect(() => {});
 
   const [SelectedSeat, setSelectedSeat] = useState([]);
 
@@ -80,4 +78,4 @@ const App = ({
   );
 };
 
-export default App;
+export default ReactBusLayout;
