@@ -1,16 +1,13 @@
 {
-  "name": "react-bus-layout",
+  "name": "react-bus-layout-pkg",
   "version": "0.1.0",
+  "private": false,
   "description": "Create stunning bus layout designs in React with ease using the React Bus Layout package",
   "main": "dist/index.js",
   "type": "module",
   "source": "src/index.js",
   "module": "dist/index.module.js",
   "unpkg": "dist/index.umd.js",
-  "scripts": {
-    "build": "microbundle",
-    "dev": "microbundle watch"
-  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -21,24 +18,47 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "devDependencies": {
-    "microbundle": "^0.15.1"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "microbundle",
+    "dev": "microbundle watch"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mrwilbroad/React-Bus-Layout.git"
   },
   "keywords": [
+    "mrwilbroad",
+    "mrwilbroad npm",
     "React",
     "Bus-Layout",
-    "Bus",
-    "Layout"
+    "Bus"
   ],
   "author": "mrwilbroad",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mrwilbroad/React-Bus-Layout/issues"
   },
-  "homepage": "https://github.com/mrwilbroad/React-Bus-Layout#readme"
-  
+  "homepage": "https://github.com/mrwilbroad/React-Bus-Layout#readme",
+  "devDependencies": {
+    "microbundle": "^0.15.1"
+  }
 }
